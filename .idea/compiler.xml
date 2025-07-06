@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="client-streaming-demo" />
         <module name="grpcdemo" />
         <module name="server-streaming-demo" />
       </profile>
@@ -13,6 +14,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client-streaming-demo" options="-parameters" />
       <module name="grpcdemo" options="-parameters" />
       <module name="server-streaming-demo" options="-parameters" />
     </option>

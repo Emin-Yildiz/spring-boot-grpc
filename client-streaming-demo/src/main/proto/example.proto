@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.proto.upload";
+option java_outer_classname = "UserUploadProto";
+
+package upload;
+
+service UserUploadService {
+
+  rpc UploadUsers(stream CreateUserRequest) returns (UploadStatus);
+}
+
+message CreateUserRequest {
+  string name = 1;
+  string email = 2;
+}
+
+message UploadStatus {
+  int32 received_count = 1;
+  string message = 2;
+}
