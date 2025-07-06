@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.proto.message";
+option java_outer_classname = "MessageServiceProto";
+
+package message;
+
+service MessageService {
+  rpc GetMessageHistory(MessageHistoryRequest) returns (stream MessageResponse);
+}
+
+message MessageHistoryRequest {
+  string user_id = 1;
+}
+
+message MessageResponse {
+  string message_id = 1;
+  string sender = 2;
+  string content = 3;
+  int64 timestamp = 4;
+}
