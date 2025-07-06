@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/server-streaming-demo/pom.xml" />
         <option value="$PROJECT_DIR$/server-streaming-demo/client-streaming-demo/pom.xml" />
         <option value="$PROJECT_DIR$/client-streaming-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/bidirectional-streaming-demo/pom.xml" />
       </list>
     </option>
   </component>
